@@ -212,7 +212,7 @@ export function formSubmit() {
 				form: form
 			}
 		}));
-		// Показуємо попап, якщо підключено модуль попапів 
+		// Показуємо попап, якщо підключено модуль попапів
 		// та для форми вказано налаштування
 		setTimeout(() => {
 			if (flsModules.popup) {
@@ -286,7 +286,7 @@ export function formRating() {
 		}
 		// Змінюємо ширину активних зірок
 		function setRatingActiveWidth(index = ratingValue.innerHTML) {
-			const ratingActiveWidth = index / 0.05;
+			const ratingActiveWidth = index / 2 / 0.05;
 			ratingActive.style.width = `${ratingActiveWidth}%`;
 		}
 		// Можливість вказати оцінку

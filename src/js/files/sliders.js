@@ -7,7 +7,7 @@
 // Підключаємо слайдер Swiper з node_modules
 // При необхідності підключаємо додаткові модулі слайдера, вказуючи їх у {} через кому
 // Приклад: { Navigation, Autoplay }
-import Swiper, { Pagination, EffectFade, Autoplay } from 'swiper';
+import Swiper, { Pagination, EffectFade, Autoplay, Navigation } from 'swiper';
 /*
 Основні модулі слайдера:
 Navigation, Pagination, Autoplay,
@@ -105,30 +105,43 @@ function initSliders() {
 		});
 	}
 
-	// if (document.querySelector('.hero__slider')) {
-	// 	// Створюємо слайдер
-	// 	new Swiper('.hero__slider', {
-	// 		modules: [Pagination, EffectFade, Autoplay],
-	// 		observer: true,
-	// 		observeParents: true,
-	// 		slidesPerView: 1,
-	// 		spaceBetween: 20,
-	// 		speed: 800,
-	// 		effect: 'fade',
-	// 		fadeEffect: {
-	// 			crossFade: true
-	// 		  },
-	// 		autoplay: {
-	// 			delay: 5000,
-	// 			disableOnInteraction: false,
-	// 		},
+	if (document.querySelector('.restaurant__slider')) {
+		// Створюємо слайдер
+		new Swiper('.restaurant__slider', {
+			modules: [Pagination, Navigation],
+			observer: true,
+			observeParents: true,
+			speed: 800,
 
-	// 		// pagination: {
-	// 		// 	el: '.swiper-pagination',
-	// 		// 	clickable: true,
-	// 		// },
-	// 	});
-	// }
+			pagination: {
+				el: '.slider-restaurant__pagination',
+				clickable: true,
+			},
+			navigation: {
+				prevEl: '.restaurant__slider .button-prev',
+				nextEl: '.restaurant__slider .button-next',
+			},
+
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 10,
+				},
+				768: {
+					slidesPerView: 1.5,
+					spaceBetween: 40,
+				},
+				992: {
+					slidesPerView: 2,
+					spaceBetween: 40,
+				},
+				1268: {
+					slidesPerView: 2,
+					spaceBetween: 60,
+				},
+			},
+		});
+	}
 
 	for (const mobileSlider of document.querySelectorAll('.hero__slider')) {
         if (mobileSlider) {

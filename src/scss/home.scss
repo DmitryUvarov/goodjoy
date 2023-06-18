@@ -839,6 +839,8 @@
 .list-product {
   display: grid;
   gap: rem(7);
+  height: fit-content;
+
   &__item {
     display: flex;
     align-items: center;

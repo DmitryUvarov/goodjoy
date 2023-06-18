@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+
+            <section class="restaurant">
+                <div class="restaurant__container">
+                    <div class="restaurant__body">
+                        <div class="restaurant__top">
+                            <h1 class="restaurant__title">ELM</h1>
+                            <div class="restaurant__grade grade-restaurant">
+                                <span>ИДЕАЛЬНО</span>
+                                <div class="grade-restaurant__rating rating">
+                                    <div class="rating__body">
+                                        <div class="rating__active"></div>
+                                        <div class="rating__items">
+                                            <input type="radio" class="rating__item" value="1" name="rating">
+                                            <input type="radio" class="rating__item" value="2" name="rating">
+                                            <input type="radio" class="rating__item" value="3" name="rating">
+                                            <input type="radio" class="rating__item" value="4" name="rating">
+                                            <input type="radio" class="rating__item" value="5" name="rating">
+                                        </div>
+                                    </div>
+                                    <div class="rating__value">9.3</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="restaurant__slider slider-restaurant">
+                            <div class="slider-restaurant__wrapper swiper-wrapper">
+                                <div class="slider-restaurant__slide slide-restaurant-ibg swiper-slide">
+                                    <img src="@img/restaurant/01.jpg" alt="">
+                                </div>
+                                <div class="restaurant__slide slide-restaurant-ibg swiper-slide">
+                                    <img src="@img/restaurant/02.jpg" alt="">
+                                </div>
+                                <div class="restaurant__slide slide-restaurant-ibg swiper-slide">
+                                    <img src="@img/restaurant/03.jpg" alt="">
+                                </div>
+                                <div class="restaurant__slide slide-restaurant-ibg swiper-slide">
+                                    <img src="@img/restaurant/01.jpg" alt="">
+                                </div>
+                                <div class="restaurant__slide slide-restaurant-ibg swiper-slide">
+                                    <img src="@img/restaurant/02.jpg" alt="">
+                                </div>
+                                <div class="restaurant__slide slide-restaurant-ibg swiper-slide">
+                                    <img src="@img/restaurant/03.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="slider-restaurant__pagination pagination"></div>
+                            <div class="slider-restaurant__navigation navigation">
+                                <button class="navigation__button button-prev"></button>
+                                <button class="navigation__button button-next"></button>
+                            </div>
+                        </div>
+
+                        <div class="restaurant__bottom">
+                            <button class="restaurant__like _icon-favorite">МНЕ НРАВИТСЯ</button>
+                            <div class="restaurant__social social">
+                                <a href="#" class="social__link _icon-vk"></a>
+                                <a href="#" class="social__link _icon-telegram"></a>
+                                <a href="#" class="social__link _icon-facebook"></a>
+                                <a href="#" class="social__link _icon-instagram"></a>
+                            </div>
+                        </div>
+
+                        <div class="restaurant__description description-restaurant">
+                            <div class="description-restaurant__title">ОПИСАНИЕ:</div>
+                            <div class="description-restaurant__body">
+                                <div class="description-restaurant__text">
+                                    <p>Ресторан авторской кухни на Большой Зелениной улице. Ресторан «Эльм» открыли Руслан Бабаджанов (Made in China, Buddha Bar) и Александр Кирюшин («КиДо»). </p>
+                                    <p>За кухню отвечает шеф-повар Руслан Бабаджанов. Акцент команда сделала на европейских и азиатских рецептах. В меню сконцентрировались на рыбе, морепродуктах, говядине и сезонных продуктах, которые дополняют азиатские соусы и сочетания. </p>
+                                    <p>Винную карту составили с акцентом на органических винах. В центре пространства с панорамными окнами установили стол для дегустаций.</p>
+                                </div>
+                                <div class="description-restaurant__list list-product">
+                                    <div class="list-product__item _icon-ruble">1300</div>
+                                    <div class="list-product__item _icon-time">Пн–Вс: 11:00 — 23:00</div>
+                                    <div class="list-product__item _icon-location">ул. Большая Зеленина 18</div>
+                                    <div class="list-product__item _icon-kitchen">Азиатская, Авторская, Европейская</div>
+                                    <a href="mailto:mail@gmail.com" class="list-product__item _icon-mail">elmsaintpetersburg.business.site</a>
+                                    <a href="tel:89291052929" class="list-product__item _icon-phone">8 (929) 105-29-29</a>
+
+                                    <div class="description-restaurant__social social">
+                                        <a href="#" class="social__link _icon-vk"></a>
+                                        <a href="#" class="social__link _icon-telegram"></a>
+                                        <a href="#" class="social__link _icon-facebook"></a>
+                                        <a href="#" class="social__link _icon-instagram"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="links">
+                <div class="links__container">
+                    <div class="links__body">
+                        <a href="#" class="links__item links__item_btn">РЕЙТИНГИ </a>
+                        <a href="#" class="links__item">МНЕ НРАВИТСЯ</a>
+                        <a href="#" class="links__item">ОТДЕЛ ЗАБОТЫ</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>
