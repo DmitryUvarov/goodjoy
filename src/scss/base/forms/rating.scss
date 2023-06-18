@@ -62,3 +62,20 @@
   line-height: 1;
   padding: 0px 0px 0px 10px;
 }
+
+//========================================================================================================================================================
+
+.rating_lite {
+  -webkit-text-stroke: 0;
+
+  .rating__active::before {
+  }
+  .rating__body::before {
+    text-stroke: 1px #000;
+    -webkit-text-stroke: 1px #000;
+  }
+
+  .rating__value {
+    display: none;
+  }
+}

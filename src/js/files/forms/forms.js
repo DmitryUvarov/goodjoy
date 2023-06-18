@@ -286,7 +286,7 @@ export function formRating() {
 		}
 		// Змінюємо ширину активних зірок
 		function setRatingActiveWidth(index = ratingValue.innerHTML) {
-			const ratingActiveWidth = index / 2 / 0.05;
+			const ratingActiveWidth = index / 0.05;
 			ratingActive.style.width = `${ratingActiveWidth}%`;
 		}
 		// Можливість вказати оцінку

@@ -42,12 +42,6 @@
 }
 
 .navigation {
-  position: absolute;
-  top: 50%;
-  left: rem(20);
-  right: rem(20);
-  transform: translateY(-50%);
-  //   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,6 +65,28 @@
       font-size: rem(48);
     }
     &::before {
+    }
+  }
+
+  &_small {
+  }
+
+  &_black {
+    column-gap: rem(20);
+
+    button {
+      &.swiper-button-disabled {
+        &::before,
+        &::after {
+          opacity: 0.5;
+        }
+      }
+
+      &::before,
+      &::after {
+        color: #212121;
+        font-size: rem(19);
+      }
     }
   }
 }
