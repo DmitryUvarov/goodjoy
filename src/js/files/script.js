@@ -18,6 +18,11 @@ function pageLoad() {
         }
 
 
+        if (targetElement.closest('.filter__button')) {
+            document.querySelector('.filter__button').classList.toggle('active')
+            document.querySelector('.filter__content').classList.toggle('active')
+        }
+
     })
 
 }

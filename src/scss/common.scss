@@ -1,5 +1,25 @@
 // Заголовки, загальні БЕМ блоки та інше...
 
+.title {
+  &_1 {
+    font-family: "Cannonade";
+    font-weight: 700;
+    @include adaptiveValue("font-size", 41, 24);
+    line-height: 122%; /* 50/41 */
+    text-transform: uppercase;
+    color: #212121;
+  }
+
+  &_2 {
+    font-family: "Gravity";
+    font-style: normal;
+    font-weight: 700;
+    @include adaptiveValue("font-size", 26, 16);
+    line-height: 119.2%; /* 31/26 */
+    color: #212121;
+  }
+}
+
 .pagination {
   display: flex;
   justify-content: center;
