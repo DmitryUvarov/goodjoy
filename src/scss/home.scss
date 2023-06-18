@@ -134,6 +134,103 @@
   }
 }
 
+.backgroung {
+  &__container {
+    position: relative;
+    @include adaptiveValue("padding-bottom", 300, 80);
+  }
+
+  &__decors {
+  }
+
+  &__decor {
+    position: absolute;
+    z-index: -1;
+    @supports (filter: blur(119.5px)) {
+      &_1 {
+        width: percent(468, 1240);
+        height: percent(228, 472);
+        top: percent(132, 472);
+        left: percent(132, 1240);
+        background: rgba(184, 183, 252, 0.8);
+        filter: blur(119.5px);
+      }
+
+      &_2 {
+        width: percent(303, 1240);
+        height: percent(252, 472);
+        top: percent(204, 472);
+        left: percent(780, 1240);
+        background: #fce0b7;
+        filter: blur(113.5px);
+      }
+
+      &_3 {
+        width: percent(467, 1240);
+        height: percent(218, 472);
+        top: percent(218, 472);
+        left: percent(768, 1240);
+        background: #b8b7fc;
+        filter: blur(119.5px);
+      }
+
+      &_4 {
+        width: percent(271, 1240);
+        height: percent(346, 472);
+        top: percent(61, 472);
+        left: percent(964, 1240);
+        background: #cdffed;
+        filter: blur(113.5px);
+      }
+
+      &_5 {
+        width: percent(649, 1240);
+        height: percent(201, 472);
+        top: percent(110, 472);
+        left: percent(245, 1240);
+        background: #cdffed;
+        filter: blur(113.5px);
+      }
+
+      &_6 {
+        width: percent(329, 1240);
+        height: percent(184, 472);
+        top: percent(184, 472);
+        left: percent(-25, 1240);
+        background: #fbfcb7;
+        filter: blur(102.5px);
+      }
+
+      &_7 {
+        width: percent(996, 1240);
+        height: percent(323, 472);
+        top: percent(61, 472);
+        left: percent(158, 1240);
+        background: #fbfcb7;
+        filter: blur(136.5px);
+      }
+
+      &_8 {
+        width: percent(514, 1240);
+        height: percent(161, 472);
+        top: percent(223, 472);
+        left: percent(158, 1240);
+        background: #b7d7fc;
+        filter: blur(113.5px);
+      }
+
+      &_9 {
+        width: percent(353, 1240);
+        height: percent(307, 472);
+        top: percent(61, 472);
+        left: percent(-38, 1240);
+        background: #fce0b7;
+        filter: blur(99px);
+      }
+    }
+  }
+}
+
 //====================================================================================================
 
 .slide-hero {
