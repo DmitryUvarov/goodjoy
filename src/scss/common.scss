@@ -1,5 +1,26 @@
 // Заголовки, загальні БЕМ блоки та інше...
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: rem(10);
+
+  .swiper-pagination-bullet {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #212121;
+    opacity: 0.7;
+    border-radius: 8px;
+    transition: all 0.3s ease 0s;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    transform: scale(1.66);
+  }
+}
+
 .breadcrumbs {
   white-space: nowrap;
   &__list {

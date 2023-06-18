@@ -1,3 +1,304 @@
 //====================================================================================================
 
+.hero {
+  &__container {
+    position: relative;
+  }
+
+  &__body {
+    padding: rem(154) 0 rem(100);
+
+    @include adaptiveValue("padding-top", 154, 20, 0, 1240, 767);
+    @include adaptiveValue("padding-bottom", 100, 20, 0, 1240, 767);
+
+    @media (max-width: $mobile) {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+
+  &__title {
+  }
+
+  &__slider {
+    &.swiper {
+      //   overflow: auto;
+    }
+
+    @media (max-width: $mobile) {
+      margin: 0 rem(-20);
+      padding: rem(20);
+    }
+  }
+
+  &__wrapper {
+  }
+
+  &__slide {
+  }
+
+  &__decors {
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    z-index: -1;
+    @supports (filter: blur(119.5px)) {
+      &_1 {
+        width: percent(468, 1240);
+        height: percent(228, 472);
+        top: percent(132, 472);
+        left: percent(132, 1240);
+        background: rgba(184, 183, 252, 0.8);
+        filter: blur(119.5px);
+      }
+
+      &_2 {
+        width: percent(303, 1240);
+        height: percent(252, 472);
+        top: percent(204, 472);
+        left: percent(780, 1240);
+        background: #fce0b7;
+        filter: blur(113.5px);
+      }
+
+      &_3 {
+        width: percent(467, 1240);
+        height: percent(218, 472);
+        top: percent(218, 472);
+        left: percent(768, 1240);
+        background: #b8b7fc;
+        filter: blur(119.5px);
+      }
+
+      &_4 {
+        width: percent(271, 1240);
+        height: percent(346, 472);
+        top: percent(61, 472);
+        left: percent(964, 1240);
+        background: #cdffed;
+        filter: blur(113.5px);
+      }
+
+      &_5 {
+        width: percent(649, 1240);
+        height: percent(201, 472);
+        top: percent(110, 472);
+        left: percent(245, 1240);
+        background: #cdffed;
+        filter: blur(113.5px);
+      }
+
+      &_6 {
+        width: percent(329, 1240);
+        height: percent(184, 472);
+        top: percent(184, 472);
+        left: percent(-25, 1240);
+        background: #fbfcb7;
+        filter: blur(102.5px);
+      }
+
+      &_7 {
+        width: percent(996, 1240);
+        height: percent(323, 472);
+        top: percent(61, 472);
+        left: percent(158, 1240);
+        background: #fbfcb7;
+        filter: blur(136.5px);
+      }
+
+      &_8 {
+        width: percent(514, 1240);
+        height: percent(161, 472);
+        top: percent(223, 472);
+        left: percent(158, 1240);
+        background: #b7d7fc;
+        filter: blur(113.5px);
+      }
+
+      &_9 {
+        width: percent(353, 1240);
+        height: percent(307, 472);
+        top: percent(61, 472);
+        left: percent(-38, 1240);
+        background: #fce0b7;
+        filter: blur(99px);
+      }
+    }
+  }
+
+  .hero__pagination {
+    margin-top: rem(8);
+    @media (min-width: $mobile) {
+      display: none;
+    }
+  }
+}
+
 //====================================================================================================
+
+.slide-hero {
+  position: relative;
+  overflow: hidden;
+  font-family: "Cannonade";
+  font-weight: 700;
+  font-size: 66px;
+  @include adaptiveValue("font-size", 66, 16);
+  line-height: 110%;
+
+  @media (max-width: $mobile) {
+    font-family: "Gravity";
+    background: #fffafa;
+    box-shadow: 0px 4px 15px rgba(33, 33, 33, 0.2);
+    border-radius: 50px;
+    padding: rem(50) rem(20);
+  }
+
+  &__title {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__decors {
+    @media (min-width: $mobile) {
+      display: none;
+    }
+  }
+  &__decor {
+    position: absolute;
+    filter: blur(68px);
+    @supports (filter: blur(119.5px)) {
+      &_1 {
+        width: percent(75, 280);
+        height: percent(82, 155);
+        top: percent(-10, 155);
+        left: percent(0, 280);
+        background: #ff9900;
+      }
+      &_2 {
+        width: percent(75, 280);
+        height: percent(65, 155);
+        top: percent(80, 155);
+        left: percent(160, 280);
+        background: #ee2b2b;
+      }
+      &_3 {
+        width: percent(199, 280);
+        height: percent(83, 155);
+        top: percent(52, 155);
+        left: percent(38, 280);
+        background: #34b981;
+      }
+      &_4 {
+        width: percent(75, 280);
+        height: percent(65, 155);
+        top: percent(81, 155);
+        left: percent(17, 280);
+        background: #3451b9;
+      }
+      &_5 {
+        width: percent(75, 280);
+        height: percent(65, 155);
+        top: percent(-20, 155);
+        left: percent(85, 280);
+        background: #3451b9;
+      }
+      &_6 {
+        width: percent(75, 280);
+        height: percent(85, 155);
+        top: percent(37, 155);
+        left: percent(183, 280);
+        background: #ffa800;
+      }
+      &_7 {
+        width: percent(75, 280);
+        height: percent(85, 155);
+        top: percent(60, 155);
+        left: percent(204, 280);
+        background: #ad00ff;
+      }
+      &_8 {
+        width: percent(75, 280);
+        height: percent(85, 155);
+        top: percent(-8, 155);
+        left: percent(183, 280);
+        background: #ffc700;
+      }
+      &_9 {
+        width: percent(75, 280);
+        height: percent(65, 155);
+        top: percent(-5, 155);
+        left: percent(3, 280);
+        background: #ffcd1c;
+      }
+      // ========
+
+      &_10 {
+        width: percent(75, 280);
+        height: percent(65, 155);
+        top: percent(-9, 155);
+        left: percent(-3, 280);
+        background: #000aff;
+      }
+      &_11 {
+        width: percent(75, 280);
+        height: percent(65, 155);
+        top: percent(50, 155);
+        left: percent(195, 280);
+        background: #ff00b8;
+      }
+      &_12 {
+        width: percent(198, 280);
+        height: percent(47, 155);
+        top: percent(55, 155);
+        left: percent(73, 280);
+        background: #34b981;
+      }
+      &_13 {
+        width: percent(75, 280);
+        height: percent(65, 155);
+        top: percent(-5, 155);
+        left: percent(0, 280);
+        background: #1401f0;
+      }
+      &_14 {
+        width: percent(75, 280);
+        height: percent(65, 155);
+        top: percent(80, 155);
+        left: percent(14, 280);
+        background: #cecece;
+      }
+      &_15 {
+        width: percent(75, 280);
+        height: percent(65, 155);
+        top: percent(-20, 155);
+        left: percent(82, 280);
+        background: #ffa800;
+      }
+      &_16 {
+        width: percent(75, 280);
+        height: percent(85, 155);
+        top: percent(36, 155);
+        left: percent(180, 280);
+        background: #ffc700;
+      }
+      &_17 {
+        width: percent(75, 280);
+        height: percent(85, 155);
+        top: percent(60, 155);
+        left: percent(200, 280);
+        background: #ffc700;
+      }
+      &_18 {
+        width: percent(75, 280);
+        height: percent(85, 155);
+        top: percent(-9, 155);
+        left: percent(180, 280);
+        background: #1401f0;
+      }
+    }
+  }
+}

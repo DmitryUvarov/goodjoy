@@ -1,5 +1,5 @@
 /*
-Документація по роботі у шаблоні: 
+Документація по роботі у шаблоні:
 Документація слайдера: https://swiperjs.com/
 Сніппет(HTML): swiper
 */
@@ -7,10 +7,10 @@
 // Підключаємо слайдер Swiper з node_modules
 // При необхідності підключаємо додаткові модулі слайдера, вказуючи їх у {} через кому
 // Приклад: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Pagination, EffectFade, Autoplay } from 'swiper';
 /*
 Основні модулі слайдера:
-Navigation, Pagination, Autoplay, 
+Navigation, Pagination, Autoplay,
 EffectFade, Lazy, Manipulation
 Детальніше дивись https://swiperjs.com/
 */
@@ -27,12 +27,12 @@ import "../../scss/base/swiper.scss";
 function initSliders() {
 	// Список слайдерів
 	// Перевіряємо, чи є слайдер на сторінці
-	if (document.querySelector('.swiper')) { // Вказуємо склас потрібного слайдера
+	if (document.querySelector('.swiper124214')) { // Вказуємо склас потрібного слайдера
 		// Створюємо слайдер
-		new Swiper('.swiper', { // Вказуємо склас потрібного слайдера
+		new Swiper('.swiper12412', { // Вказуємо склас потрібного слайдера
 			// Підключаємо модулі слайдера
 			// для конкретного випадку
-			modules: [Navigation],
+			modules: [],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
@@ -72,10 +72,10 @@ function initSliders() {
 			*/
 
 			// Кнопки "вліво/вправо"
-			navigation: {
-				prevEl: '.swiper-button-prev',
-				nextEl: '.swiper-button-next',
-			},
+			// navigation: {
+			// 	prevEl: '.swiper-button-prev',
+			// 	nextEl: '.swiper-button-next',
+			// },
 			/*
 			// Брейкпоінти
 			breakpoints: {
@@ -104,6 +104,96 @@ function initSliders() {
 			}
 		});
 	}
+
+	// if (document.querySelector('.hero__slider')) {
+	// 	// Створюємо слайдер
+	// 	new Swiper('.hero__slider', {
+	// 		modules: [Pagination, EffectFade, Autoplay],
+	// 		observer: true,
+	// 		observeParents: true,
+	// 		slidesPerView: 1,
+	// 		spaceBetween: 20,
+	// 		speed: 800,
+	// 		effect: 'fade',
+	// 		fadeEffect: {
+	// 			crossFade: true
+	// 		  },
+	// 		autoplay: {
+	// 			delay: 5000,
+	// 			disableOnInteraction: false,
+	// 		},
+
+	// 		// pagination: {
+	// 		// 	el: '.swiper-pagination',
+	// 		// 	clickable: true,
+	// 		// },
+	// 	});
+	// }
+
+	for (const mobileSlider of document.querySelectorAll('.hero__slider')) {
+        if (mobileSlider) {
+            (function () {
+                "use strict";
+
+                const breakpoint = window.matchMedia("(min-width:768px)");
+                let sliderOne;
+                let sliderTwo;
+
+                const enableSwiperOne = function () {
+                    sliderOne = new Swiper('.hero__slider', {
+						modules: [EffectFade, Autoplay],
+						observer: true,
+						observeParents: true,
+						slidesPerView: 1,
+						spaceBetween: 10,
+						speed: 800,
+
+						effect: 'fade',
+						fadeEffect: {
+							crossFade: true
+						  },
+						autoplay: {
+							delay: 5000,
+							disableOnInteraction: false,
+						},
+					});
+                };
+                const enableSwiperTwo = function () {
+                    sliderTwo = new Swiper('.hero__slider', {
+						modules: [Pagination],
+						observer: true,
+						observeParents: true,
+						slidesPerView: 1,
+						spaceBetween: 9,
+						speed: 800,
+
+						pagination: {
+							el: '.hero__pagination',
+							clickable: true,
+						},
+					});
+                };
+
+				console.log(mobileSlider)
+                const breakpointChecker = function () {
+                    if (breakpoint.matches === true) {
+                        if (sliderTwo !== undefined) sliderTwo.destroy(true, true);
+
+                        return enableSwiperOne();
+                    } else if (breakpoint.matches === false) {
+						if (sliderOne !== undefined) sliderOne.destroy(true, true);
+
+                        return enableSwiperTwo();
+                    }
+                };
+
+                breakpoint.addListener(breakpointChecker);
+                breakpointChecker();
+            })();
+        }
+
+    }
+
 }
 // Скролл на базі слайдера (за класом swiper scroll для оболонки слайдера)
 function initSlidersScroll() {
