@@ -1,0 +1,138 @@
+.comment {
+  padding: rem(10) 0 rem(15);
+  &__container {
+  }
+
+  &__body {
+  }
+
+  &__top {
+  }
+
+  &__close {
+    margin-bottom: rem(8);
+  }
+
+  &__restaurant {
+    display: flex;
+    align-items: center;
+    column-gap: rem(10);
+    padding: rem(0) rem(30) rem(10);
+    border-bottom: 1px solid #908d8d;
+  }
+
+  &__image-ibg {
+    width: 59px;
+    height: 59px;
+    flex-shrink: 0;
+  }
+
+  &__content {
+  }
+
+  &__name {
+    color: #212121;
+    font-size: 14px;
+    font-family: Gravity;
+    font-weight: 700;
+    margin-bottom: rem(4);
+  }
+
+  &__list-product {
+  }
+
+  &__title {
+    font-size: 26px;
+    font-family: Gravity;
+    max-width: rem(238);
+    margin-bottom: rem(6);
+    margin-top: rem(20);
+  }
+}
+.comment-form {
+  &__title {
+    font-size: 26px;
+    font-family: Gravity;
+    margin-bottom: rem(10);
+  }
+
+  &__block {
+    border-radius: 10px;
+    border: 1px solid #908d8d;
+    padding: rem(11) rem(15);
+  }
+
+  &__textarea {
+    color: #212121;
+    font-size: 16px;
+    font-family: Gravity;
+    font-weight: 250;
+    line-height: 130%;
+
+    min-height: rem(220);
+    background: transparent;
+    width: 100%;
+  }
+
+  &__info {
+    color: #212121;
+    font-size: 10px;
+    font-family: Gravity;
+  }
+
+  &__label {
+    color: #212121;
+    font-size: 10px;
+    font-family: Gravity;
+    margin-left: auto;
+    display: block;
+    width: max-content;
+    padding: rem(9) 0;
+    input {
+      display: none;
+    }
+    label {
+      display: flex;
+      align-items: center;
+      column-gap: rem(5);
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 40px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 0.5px solid #908d8d;
+  }
+
+  &__button {
+    cursor: pointer;
+    color: #fffafa;
+    font-size: 10px;
+    font-family: Gravity;
+    border-radius: 5px;
+    border: 1px solid #212121;
+    background: #212121;
+    padding: rem(10);
+    display: block;
+    margin-left: auto;
+  }
+
+  &__rating {
+    margin-bottom: rem(25);
+    align-items: center;
+    display: flex;
+    column-gap: rem(5);
+  }
+  .rating__value {
+    display: none;
+  }
+
+  .rating__text {
+    margin-left: rem(5);
+  }
+}

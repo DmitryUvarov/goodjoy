@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+    <div class="wrapper">
+        <main class="page">
+
+
+            <section class="comment">
+                <div class="comment__container">
+                    <div class="comment__body">
+                        <div class="comment__close"><img src="@img/comment/close.svg" alt=""></div>
+                        <div class="comment__restaurant">
+                            <div class="comment__image-ibg"><img src="@img/comment/01.jpg" alt=""></div>
+                            <div class="comment__content">
+                                <div class="comment__name">ELM</div>
+                                <div class="comment__list-product list-product">
+                                    <div class="list-product__item _icon-location">ул. Большая Зеленина 18</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <form action="#" class="comment-form">
+                            <div class="comment__title">Оцените свое
+                                пребывание здесь</div>
+
+
+                            <div class="comment-form__rating rating rating_set">
+                                <div class="rating__body">
+                                    <div class="rating__active"></div>
+                                    <div class="rating__items">
+                                        <input type="radio" class="rating__item" value="1" name="rating">
+                                        <input type="radio" class="rating__item" value="2" name="rating">
+                                        <input type="radio" class="rating__item" value="3" name="rating">
+                                        <input type="radio" class="rating__item" value="4" name="rating">
+                                        <input type="radio" class="rating__item" value="5" name="rating">
+                                    </div>
+                                </div>
+                                <div class="rating__value">3</div>
+                                <div class="rating__text">Неплохо</div>
+
+                            </div>
+                            <div class="comment-form__title">Напишите отзыв</div>
+                            <div class="comment-form__block">
+
+                                <textarea name="" id="" class="comment-form__textarea" placeholder="Вы оценили этого объекта на 3 балла из 5, почему? Расскажите, пожалуйста, подробнее."></textarea>
+                                <div class="comment-form__info">Осталось символов 100/100</div>
+                            </div>
+                            <div class="comment-form__label">
+                                <label for="inp1">
+                                    <div class="comment-form__icon"><img src="@img/comment/icon.svg" alt=""></div> Прикрепите фото с Вашего визита
+                                </label>
+                                <input type="file" name="" id="inp1">
+                            </div>
+                            <button class="comment-form__button button">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="links">
+                <div class="links__container">
+                    <div class="links__body">
+                        <a href="#" class="links__item links__item_btn">РЕЙТИНГИ </a>
+                        <a href="#" class="links__item">МНЕ НРАВИТСЯ</a>
+                        <a href="#" class="links__item">ОТДЕЛ ЗАБОТЫ</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

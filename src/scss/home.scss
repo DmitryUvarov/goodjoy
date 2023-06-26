@@ -799,6 +799,48 @@
 }
 
 .grade {
+  font-weight: 700;
+  @include adaptiveValue("font-size", 16, 14);
+  line-height: 118.8%; /* 19/16 */
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: rem(17);
+
+  @media (max-width: $mobile) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  span {
+    font-weight: 700;
+    font-size: rem(26);
+    line-height: 119.2%; /* 31/26 */
+
+    &::before {
+      content: "★";
+      color: #fcd400;
+      font-size: rem(31);
+      text-stroke: 0.5px #000;
+      -webkit-text-stroke: 0.5px #000;
+    }
+  }
+
+  &_small {
+    span {
+      font-size: rem(16);
+
+      &::before {
+        font-size: rem(22);
+        text-stroke: 0;
+        -webkit-text-stroke: 0;
+        margin-right: rem(4);
+      }
+    }
+  }
 }
 .link {
   font-family: "Gravity";
