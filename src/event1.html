@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+
+
+            <section class="event">
+                <div class="event__container">
+                    <div class="event__body">
+                        <div class="event__poster">
+                            <div class="event__top">
+                                <div class="event__control">
+                                    <a href="#" class="event__back">НАЗАД</a>
+                                    <div class="event__label">КИНО</div>
+                                </div>
+                                <div class="event__age">16+</div>
+                            </div>
+                            <div class="event__image-ibg"><img src="@img/event/02.jpg" alt=""></div>
+                        </div>
+                        <div class="event__content content-event">
+                            <div class="content-event__top">
+                                <div class="content-event__col">
+                                    <div class="content-event__maintitle">GUF</div>
+                                    <div class="content-event__subtitle">Музыкант</div>
+                                </div>
+                                <div class="content-event__col">
+                                    <a href="#" class="content-event__repost _icon-repost">ПОДЕЛИТЬСЯ</a>
+                                </div>
+                            </div>
+                            <ul class="content-event__list">
+                                <li class="content-event__item">
+                                    <div class="content-event__item-title">Место:</div>
+                                    <div class="content-event__item-text">Космонавт</div>
+                                </li>
+                                <li class="content-event__item">
+                                    <div class="content-event__item-title">Время:</div>
+                                    <div class="content-event__item-text">20:00</div>
+                                </li>
+                                <li class="content-event__item">
+                                    <div class="content-event__item-title">Дата:</div>
+                                    <div class="content-event__item-text">29 сентября</div>
+                                </li>
+                            </ul>
+
+                            <div data-showmore class="content-event__showmore event-showmore">
+                                <div data-showmore-content="168" class="event-showmore__content">
+                                    <p>Guf даст большой сольный концерт! Традиционно со сцены прозвучат все хиты и новые треки!</p>
+                                    <p>Guf — это не просто яркий исполнитель, завоевавший себе имя на хип-хоп сцене</p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam officia quibusdam consectetur nam consequatur. Eius, quis consequuntur quidem culpa ex excepturi, molestiae iste corrupti aut repellendus nemo corporis hic veniam?
+                                </div>
+                                <button hidden data-showmore-button type="button" class="event-showmore__more"><span>Читать полностью</span><span>Скыть</span></button>
+                            </div>
+
+                            <button class="content-event__button _icon-favorite">МНЕ НРАВИТСЯ</button> <!-- add class name "active" -->
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="links">
+                <div class="links__container">
+                    <div class="links__body">
+                        <a href="#" class="links__item links__item_btn">РЕЙТИНГИ </a>
+                        <a href="#" class="links__item">МНЕ НРАВИТСЯ</a>
+                        <a href="#" class="links__item">ОТДЕЛ ЗАБОТЫ</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

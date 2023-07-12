@@ -242,6 +242,54 @@ function initSliders() {
 
     }
 
+
+	if (document.querySelector('.events-poster__slider')) {
+		// Створюємо слайдер
+		new Swiper('.events-poster__slider', {
+			modules: [Pagination],
+			observer: true,
+			observeParents: true,
+			speed: 800,
+			slidesPerView: 1,
+			spaceBetween: 10,
+
+			pagination: {
+				el: '.events-poster__pagination',
+				clickable: true,
+			},
+		});
+	}
+	if (document.querySelector('.poster__slider')) {
+		// Створюємо слайдер
+		new Swiper('.poster__slider', {
+			modules: [Pagination],
+			observer: true,
+			observeParents: true,
+			speed: 800,
+			slidesPerView: 1,
+			spaceBetween: 10,
+
+			pagination: {
+				el: '.poster__pagination',
+				clickable: true,
+			},
+		});
+	}
+	if (document.querySelector('.poster__date-slider')) {
+		// Створюємо слайдер
+		new Swiper('.poster__date-slider', {
+			modules: [],
+			observer: true,
+			observeParents: true,
+			speed: 800,
+			slidesPerView: 5,
+			spaceBetween: 0,
+
+
+		});
+	}
+
+
 }
 // Скролл на базі слайдера (за класом swiper scroll для оболонки слайдера)
 function initSlidersScroll() {

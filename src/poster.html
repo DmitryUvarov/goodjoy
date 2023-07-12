@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+
+            <section class="poster">
+                <div class="poster__container">
+                    <div class="poster__body">
+                        <div class="poster__top">
+                            <a href="#" class="poster__back">НАЗАД</a>
+                            <button class="poster__button _icon-arrow-bottom">СОБЫТИЯ</button>
+                            <div class="poster__label">ВСЕ</div>
+                            <ul class="poster__list">
+                                <li class="poster__item active">ВСЕ</li>
+                                <li class="poster__item">КОНЦЕРТЫ</li>
+                                <li class="poster__item">ТЕАТР</li>
+                                <li class="poster__item">ВЫСТАВКИ</li>
+                                <li class="poster__item">КИНО</li>
+                                <li class="poster__item">ЭКСКУРСИИ</li>
+                                <div class="poster__list-close"></div>
+                            </ul>
+                        </div>
+
+                        <div class="poster__slider">
+                            <div class="poster__wrapper swiper-wrapper">
+                                <a href="#" class="poster__slide slide-poster swiper-slide">
+                                    <div class="slide-poster__img-ibg"><img src="@img/poster/01.jpg" alt=""></div>
+                                    <div class="slide-poster__content">
+                                        <div class="slide-poster__label">ЭКСКУРСИЯ</div>
+                                        <div class="slide-poster__inner">
+                                            <div class="slide-poster__title">Северная Венеция</div>
+                                            <div class="slide-poster__date">
+                                                <span>Ужедневно по расписанию</span>
+                                                <span>Причал на Фонтанке 53</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="poster__slide slide-poster swiper-slide">
+                                    <div class="slide-poster__img-ibg"><img src="@img/poster/01.jpg" alt=""></div>
+                                    <div class="slide-poster__content">
+                                        <div class="slide-poster__label">ЭКСКУРСИЯ</div>
+                                        <div class="slide-poster__inner">
+                                            <div class="slide-poster__title">Северная Венеция</div>
+                                            <div class="slide-poster__date">
+                                                <span>Ужедневно по расписанию</span>
+                                                <span>Причал на Фонтанке 53</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="poster__pagination pagination"></div>
+                        </div>
+
+                        <div class="poster__date-title">ИЮЛЬ</div>
+                        <div class="poster__date-slider date-slider">
+                            <div class="poster__date-wrapper swiper-wrapper">
+                                <div class="poster__date-slide slide-date slide-date_current swiper-slide">
+                                    <div class="slide-date__name">Вт</div>
+                                    <div class="slide-date__num">4</div>
+                                </div>
+                                <div class="poster__date-slide slide-date swiper-slide">
+                                    <div class="slide-date__name">Ср</div>
+                                    <div class="slide-date__num">5</div>
+                                </div>
+                                <div class="poster__date-slide slide-date swiper-slide">
+                                    <div class="slide-date__name">Чт</div>
+                                    <div class="slide-date__num">6</div>
+                                </div>
+                                <div class="poster__date-slide slide-date slide-date_holiday swiper-slide">
+                                    <div class="slide-date__name">Пт</div>
+                                    <div class="slide-date__num">7</div>
+                                </div>
+                                <div class="poster__date-slide slide-date slide-date_holiday swiper-slide">
+                                    <div class="slide-date__name">Сб</div>
+                                    <div class="slide-date__num">8</div>
+                                </div>
+                                <div class="poster__date-slide slide-date slide-date_holiday swiper-slide">
+                                    <div class="slide-date__name">Вс</div>
+                                    <div class="slide-date__num">9</div>
+                                </div>
+                                <div class="poster__date-slide slide-date swiper-slide">
+                                    <div class="slide-date__name">Пн</div>
+                                    <div class="slide-date__num">10</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="poster__text">Мы сделали большой выбор мест для посещения, где вы видите те места, которые пользуются спросом людей больше всего.</div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="poster-top">
+                <div class="poster-top__container">
+                    <div class="poster-top__body">
+                        <h2 class="poster-top__title">ТОП 10 СОБЫТИЙ</h2>
+                        <div class="poster-top__items">
+                            <div class="poster-top__item">
+                                <div class="poster-top__content">
+                                    <h3 class="poster-top__item-title"><a href="#">1. Искусство «Манга»</a></h3>
+                                    <div class="poster-top__inner">
+                                        <div class="poster-top__label">ВЫСТАВКА</div>
+                                        <a href="#" class="poster-top__link _icon-link"></a>
+                                    </div>
+                                </div>
+                                <a href="#" class="poster-top__img-ibg"><img src="@img/poster/02.jpg" alt=""></a>
+                            </div>
+                            <div class="poster-top__item">
+                                <div class="poster-top__content">
+                                    <h3 class="poster-top__item-title"><a href="#">2. Сергей орлов «благие намерения»</a></h3>
+                                    <div class="poster-top__inner">
+                                        <div class="poster-top__label">КОНЦЕРТ</div>
+                                        <a href="#" class="poster-top__link _icon-link"></a>
+                                    </div>
+                                </div>
+                                <a href="#" class="poster-top__img-ibg"><img src="@img/poster/03.jpg" alt=""></a>
+                            </div>
+                            <div class="poster-top__item">
+                                <div class="poster-top__content">
+                                    <h3 class="poster-top__item-title"><a href="#">3. Проверка материала опытных комиков</a></h3>
+                                    <div class="poster-top__inner">
+                                        <div class="poster-top__label">КОНЦЕРТ</div>
+                                        <a href="#" class="poster-top__link _icon-link"></a>
+                                    </div>
+                                </div>
+                                <a href="#" class="poster-top__img-ibg"><img src="@img/poster/04.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="links">
+                <div class="links__container">
+                    <div class="links__body">
+                        <a href="#" class="links__item links__item_btn">РЕЙТИНГИ </a>
+                        <a href="#" class="links__item">МНЕ НРАВИТСЯ</a>
+                        <a href="#" class="links__item">ОТДЕЛ ЗАБОТЫ</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

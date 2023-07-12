@@ -23,6 +23,16 @@ function pageLoad() {
             document.querySelector('.filter__content').classList.toggle('active')
         }
 
+        if (targetElement.closest('.poster__button')) {
+            document.querySelector('.poster__button').classList.toggle('active')
+            document.querySelector('.poster__list').classList.toggle('active')
+        }
+
+        if (targetElement.closest('.poster__list-close') && document.querySelector('.poster__list.active')) {
+            document.querySelector('.poster__button').classList.toggle('active')
+            document.querySelector('.poster__list').classList.toggle('active')
+        }
+
     })
 
 }

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page">
+
+
+            <section class="event">
+                <div class="event__container">
+                    <div class="event__body">
+                        <div class="event__poster">
+                            <div class="event__top">
+                                <div class="event__control">
+                                    <a href="#" class="event__back">НАЗАД</a>
+                                    <div class="event__label">КИНО</div>
+                                </div>
+                                <div class="event__age">16+</div>
+                            </div>
+                            <div class="event__image-ibg"><img src="@img/event/01.jpg" alt=""></div>
+                        </div>
+                        <div class="event__content content-event">
+                            <div class="content-event__top">
+                                <div class="content-event__col">
+                                    <div class="content-event__maintitle">ФЛЕШ</div>
+                                    <div class="content-event__subtitle">The Flash</div>
+                                </div>
+                                <div class="content-event__col">
+                                    <a href="#" class="content-event__repost _icon-repost">ПОДЕЛИТЬСЯ</a>
+                                </div>
+                            </div>
+                            <ul class="content-event__list">
+                                <li class="content-event__item">
+                                    <div class="content-event__item-title">Когда:</div>
+                                    <div class="content-event__item-text">Сегодня в 7 кинотеатрах</div>
+                                </li>
+                                <li class="content-event__item">
+                                    <div class="content-event__item-title">Длительность:</div>
+                                    <div class="content-event__item-text">144 мин.</div>
+                                </li>
+                            </ul>
+
+                            <div data-showmore class="content-event__showmore event-showmore">
+                                <div data-showmore-content="168" class="event-showmore__content">Физик-ядерщик Барри Аллен после несчастного случая оказывается облучённым ядохимикатами. Чудом оставшись в живых, приняв смертельную долю химических веществ и метаморфоз, произошедших... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad similique natus atque exercitationem. Quod, libero, dolor officia pariatur expedita rem molestiae cumque qui eos fuga quisquam consequatur culpa impedit illum!</div>
+                                <button hidden data-showmore-button type="button" class="event-showmore__more"><span>Читать полностью</span><span>Скыть</span></button>
+                            </div>
+
+                            <div class="content-event__title">РАСПИСАНИЕ СЕАНСОВ</div>
+
+                            <div class="content-event__date-title">ИЮЛЬ</div>
+                            <div class="poster__date-slider date-slider date-slider_white">
+
+                                <div class="poster__date-wrapper swiper-wrapper">
+                                    <div class="poster__date-slide slide-date slide-date_current swiper-slide">
+                                        <div class="slide-date__name">Вт</div>
+                                        <div class="slide-date__num">4</div>
+                                    </div>
+                                    <div class="poster__date-slide slide-date swiper-slide">
+                                        <div class="slide-date__name">Ср</div>
+                                        <div class="slide-date__num">5</div>
+                                    </div>
+                                    <div class="poster__date-slide slide-date swiper-slide">
+                                        <div class="slide-date__name">Чт</div>
+                                        <div class="slide-date__num">6</div>
+                                    </div>
+                                    <div class="poster__date-slide slide-date slide-date_holiday swiper-slide">
+                                        <div class="slide-date__name">Пт</div>
+                                        <div class="slide-date__num">7</div>
+                                    </div>
+                                    <div class="poster__date-slide slide-date slide-date_holiday swiper-slide">
+                                        <div class="slide-date__name">Сб</div>
+                                        <div class="slide-date__num">8</div>
+                                    </div>
+                                    <div class="poster__date-slide slide-date slide-date_holiday swiper-slide">
+                                        <div class="slide-date__name">Вс</div>
+                                        <div class="slide-date__num">9</div>
+                                    </div>
+                                    <div class="poster__date-slide slide-date swiper-slide">
+                                        <div class="slide-date__name">Пн</div>
+                                        <div class="slide-date__num">10</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-event__timetable timetable">
+                                <div class="timetable__title">Cinema Grand Palace</div>
+                                <ul class="timetable__items active">
+                                    <li class="timetable__item">17:25</li>
+                                    <li class="timetable__item">18:45</li>
+                                </ul>
+                                <div class="timetable__title">Mori Cinema</div>
+                                <ul class="timetable__items">
+                                    <li class="timetable__item">17:25</li>
+                                    <li class="timetable__item">18:45</li>
+                                </ul>
+                                <div class="timetable__title">Аврора</div>
+                                <ul class="timetable__items">
+                                    <li class="timetable__item">17:25</li>
+                                    <li class="timetable__item">18:45</li>
+                                    <li class="timetable__item">17:25</li>
+                                    <li class="timetable__item">18:45</li>
+                                </ul>
+                                <div class="timetable__title">Байконур</div>
+                                <ul class="timetable__items">
+                                    <li class="timetable__item">17:25</li>
+                                    <li class="timetable__item">18:45</li>
+                                </ul>
+                                <div class="timetable__title">Великан</div>
+                                <ul class="timetable__items">
+                                    <li class="timetable__item">17:25</li>
+                                    <li class="timetable__item">18:45</li>
+                                    <li class="timetable__item">17:25</li>
+                                </ul>
+                                <div class="timetable__title">Восход</div>
+                                <ul class="timetable__items">
+                                    <li class="timetable__item">17:25</li>
+                                    <li class="timetable__item">18:45</li>
+                                </ul>
+                                <div class="timetable__title">Дружба</div>
+                                <ul class="timetable__items">
+                                    <li class="timetable__item">17:25</li>
+                                    <li class="timetable__item">18:45</li>
+                                </ul>
+                                <div class="timetable__title">Каро 11 Охта</div>
+                                <ul class="timetable__items">
+                                    <li class="timetable__item">17:25</li>
+                                    <li class="timetable__item">18:45</li>
+                                </ul>
+                            </div>
+
+                            <button class="content-event__button _icon-favorite">МНЕ НРАВИТСЯ</button> <!-- add class name "active" -->
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="links">
+                <div class="links__container">
+                    <div class="links__body">
+                        <a href="#" class="links__item links__item_btn">РЕЙТИНГИ </a>
+                        <a href="#" class="links__item">МНЕ НРАВИТСЯ</a>
+                        <a href="#" class="links__item">ОТДЕЛ ЗАБОТЫ</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>
