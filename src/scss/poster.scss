@@ -331,9 +331,19 @@
     text-transform: uppercase;
   }
 
+  &__item-genre {
+    color: #515151;
+    font-size: 14px;
+    line-height: 118.8%; /* 19/16 */
+    font-weight: 700;
+    margin-top: rem(5);
+
+    text-transform: none;
+  }
+
   &__inner {
     display: flex;
-    justify-content: space-between;
+    column-gap: rem(10);
   }
 
   &__label {
@@ -345,6 +355,11 @@
     color: #232323;
     line-height: 120%;
     width: max-content;
+  }
+
+  &__grade {
+    color: #232323;
+    margin-left: auto;
   }
 
   &__link {

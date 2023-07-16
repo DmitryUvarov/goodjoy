@@ -197,7 +197,7 @@
   }
 
   &__text {
-    font-size: 16px;
+    @include adaptiveValue("font-size", 16, 10);
     line-height: 130%;
 
     & p {
