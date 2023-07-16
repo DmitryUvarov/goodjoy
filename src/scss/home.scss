@@ -461,7 +461,7 @@
 
 .item-categories {
   cursor: pointer;
-  @include adaptiveValue("font-size", 16, 12);
+  @include adaptiveValue("font-size", 16, 14);
   line-height: 118.8%; /* 19/16 */
   color: #212121;
   border: 1px solid #212121;
